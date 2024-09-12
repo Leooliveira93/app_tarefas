@@ -1,5 +1,5 @@
 <?php
-
-	require_once '../../app_tarefas/protegido/tarefa_controller.php';
+	
+	require_once __DIR__ . '/../protegido/tarefa_controller.php';
 
 ?>

@@ -2,10 +2,10 @@
 
 class Conexao {
 
-  private $host = 'localhost';
+  private $host = 'app_tarefas-mysql-1';
   private $dbname = 'app_tarefas';
   private $user = 'root';
-  private $pass = '';
+  private $pass = 'root';
 
   public function conectar(){
     try {
@@ -19,7 +19,7 @@ class Conexao {
       return $conexao;
       
     }catch(PDOException $e) {
-      echo '<p>' .$e ->getMessege(). '</p'; 
+      echo '<p>' .$e->getMessage(). '</p'; 
     }
   }
 
